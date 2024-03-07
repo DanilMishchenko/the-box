@@ -1,1 +1,0 @@
-!function(){"use strict";console.log("About.js loaded"),console.log(3)}();

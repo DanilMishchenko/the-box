@@ -1,1 +1,0 @@
-!function(){"use strict";console.log("Index.js loaded"),console.log(8),console.log((async(o,l)=>6)())}();
