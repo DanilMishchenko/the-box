@@ -1,0 +1,29 @@
+#header {
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  padding: 16px 0;
+}
+
+.nav-list {
+  display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  color: $primary-text-color;
+}
+
+.nav-item:not(:first-child) {
+  margin-left: 50;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: $secondary-color;
+}
