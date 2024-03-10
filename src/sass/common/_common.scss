@@ -1,1 +1,69 @@
+html {
+  scroll-behavior: smooth;
+}
 
+body {
+  color: $primary-text-color;
+  background-color: $main-white-color;
+  font-family: 'WorkSans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: currentColor;
+  cursor: pointer;
+}
+
+svg,
+a {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 112px;
+  padding-right: 112px;
+
+  // @media screen and (min-width: $mobile) {
+  //   width: 320px;
+  // }
+
+  // @media screen and (min-width: $tablet) {
+  //   width: 768px;
+  // }
+
+  @media screen and (min-width: $desktop) {
+    width: 1440px;
+  }
+}

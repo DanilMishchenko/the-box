@@ -1,0 +1,27 @@
+@mixin hero-background() {
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.9) 16.585%,
+        rgba(255, 255, 255, 0) 72.384%
+      ),
+      url('../assets/images/desktop/hero.jpeg');
+  }
+
+  @media screen and (min-resolution: 2dppx) and (min-width: $desktop) {
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.9) 16.585%,
+        rgba(255, 255, 255, 0) 72.384%
+      ),
+      url('../assets/images/desktop/hero@2x.jpeg');
+  }
+  @media screen and (min-resolution: 3dppx) and (min-width: $desktop) {
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.9) 16.585%,
+        rgba(255, 255, 255, 0) 72.384%
+      ),
+      url('../assets/images/desktop/hero@3x.jpeg');
+  }
+}
