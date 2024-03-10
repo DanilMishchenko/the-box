@@ -1,0 +1,78 @@
+#hero {
+  position: relative;
+  max-width: 1440px;
+  height: 646px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 239px;
+
+  background-color: $placeholder-color;
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.9) 16.585%,
+      rgba(255, 255, 255, 0) 72.384%
+    ),
+    url('../assets/images/desktop/hero.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include hero-background();
+}
+
+.hero-title {
+  font-size: 72px;
+  font-weight: 600;
+}
+
+.hero-description {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 416px;
+  min-height: 190px;
+  border-radius: 2px 2px 0 0;
+  padding-top: 20px;
+  color: $main-white-color;
+  background-color: $primary-color;
+}
+
+.description-info {
+  text-align: center;
+}
+
+.description-info p {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.description-info span {
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+  min-height: 40px;
+  font-size: 18px;
+  line-height: 1.17;
+  color: $main-white-color;
+  background-color: $primary-text-color;
+}
+
+.button-container button:first-child {
+  border-right: 1px solid white;
+}
