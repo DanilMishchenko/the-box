@@ -31,14 +31,11 @@
           border: 1px solid $placeholder-color;
           border-radius: 4px;
           padding: 8px;
-        }
-
-        & .form-input::placeholder {
-          font-size: 18px;
+          font-size: 16px;
         }
 
         & .form-input:focus {
-          border-color: $secondary-color;
+          border-color: $primary-color;
           outline: 0;
         }
 
@@ -53,7 +50,7 @@
           height: 100%;
           padding: 10px 8px;
           color: $placeholder-color;
-          font-size: 18px;
+          font-size: 16px;
           user-select: none;
           cursor: text;
         }
@@ -81,14 +78,50 @@
       }
 
       & .form-textarea:focus {
-        border-color: $secondary-color;
+        border-color: $primary-color;
         outline: 0;
       }
 
       & .select {
         position: relative;
         & .select__header {
+          position: relative;
           cursor: pointer;
+
+          & .select__current {
+            width: 100%;
+            border: 1px solid $placeholder-color;
+            border-radius: 4px;
+            padding: 8px;
+            font-size: 16px;
+          }
+
+          & .select__current:focus {
+            border-color: $primary-color;
+            outline: 0;
+          }
+
+          & .select-placeholder {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            padding: 10px 8px;
+            color: $placeholder-color;
+            font-size: 16px;
+            user-select: none;
+            cursor: text;
+          }
+
+          & input:required + .select-placeholder::after {
+            content: ' *';
+            color: red;
+            opacity: 1;
+          }
 
           & .select__icon {
             position: absolute;
@@ -107,6 +140,7 @@
           border: 1px solid $placeholder-color;
           border-top: 0;
           background-color: $main-white-color;
+          color: $primary-color;
 
           & .select__item {
             cursor: pointer;
@@ -116,7 +150,7 @@
           }
 
           .select__item:hover {
-            background-color: $secondary-background-color;
+            background-color: $placeholder-color;
           }
         }
         &.is-active .select__body {
