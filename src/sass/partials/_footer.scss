@@ -1,0 +1,82 @@
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info h4 {
+  color: $primary-color;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+.footer-contacts {
+  display: flex;
+}
+
+.information-list {
+  margin-left: 12px;
+}
+
+.information-list li:not(:last-child),
+.information-name li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.information-list a {
+  font-style: normal;
+}
+
+.footer-logo {
+  margin-top: 32px;
+}
+
+.footer-social h4 {
+  margin-bottom: 20px;
+}
+
+.subscription-form {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.subscription-input {
+  width: 280px;
+  padding: 8px;
+  border: 1px solid $placeholder-color;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.subscription-input::placeholder {
+  font-size: 18px;
+}
+
+.subscription-button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 4px;
+  background-color: $secondary-color;
+  color: $main-white-color;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.1666;
+}
+
+.social-list {
+  display: flex;
+
+  li {
+    margin-right: 20px;
+  }
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: $primary-color;
+  color: $main-white-color;
+  font-size: 16px;
+  line-height: 1.1875;
+}
