@@ -17,8 +17,11 @@ function selectToggle() {
 function selectChoose() {
   const currentText = this.textContent;
 
-  refs.selectCurrent.value = currentText;
-  selectToggle();
+  refs.selectCurrent.value = currentText.trim();
+  if (!refs.selectCurrent.value == '') {
+    const placeholder = refs.selectHeader.querySelector('.select-placeholder');
+    placeholder.style.display = 'none';
+  }
 }
 
 function handleClickOutside(e) {
