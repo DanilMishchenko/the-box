@@ -25,3 +25,31 @@
       url('../assets/images/desktop/hero@3x.jpeg');
   }
 }
+
+@mixin ads-background() {
+  @media screen and (min-width: $desktop) {
+    background-image: inear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url('../assets/images/desktop/adc_background.jpeg');
+  }
+
+  @media screen and (min-resolution: 2dppx) and (min-width: $desktop) {
+    background-image: inear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url('../assets/images/desktop/adc_background@2x.jpeg');
+  }
+  @media screen and (min-resolution: 3dppx) and (min-width: $desktop) {
+    background-image: inear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url('../assets/images/desktop/adc_background@3x.jpeg');
+  }
+}
