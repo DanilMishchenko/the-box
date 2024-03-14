@@ -68,6 +68,25 @@ button {
   }
 }
 
+.container_large {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 216px;
+  padding-right: 216px;
+
+  // @media screen and (min-width: $mobile) {
+  //   width: 320px;
+  // }
+
+  // @media screen and (min-width: $tablet) {
+  //   width: 768px;
+  // }
+
+  @media screen and (min-width: $desktop) {
+    width: 1440px;
+  }
+}
+
 .section_small {
   padding: 60px 0;
 }
