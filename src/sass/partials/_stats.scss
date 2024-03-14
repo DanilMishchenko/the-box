@@ -1,0 +1,126 @@
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  & .stats-list {
+    position: relative;
+    min-width: 642px;
+    min-height: 629px;
+    margin-left: 38px;
+    & .stats-item {
+      display: flex;
+      flex-direction: column;
+      border-radius: 4px;
+      background-color: $main-white-color;
+      box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05),
+        0px 12px 16px -4px rgba(17, 24, 39, 0.1);
+    }
+
+    & .stats-item:nth-child(1) {
+      position: absolute;
+      bottom: 44px;
+      left: 52px;
+      width: 370px;
+      padding: 20px 0 40px 30px;
+
+      & img {
+        position: absolute;
+        width: 93px;
+        bottom: -44px;
+        right: -40px;
+      }
+    }
+
+    & .stats-item:nth-child(2) {
+      position: absolute;
+      top: 132px;
+      width: 400px;
+      padding: 20px 0 40px 30px;
+
+      & img {
+        position: absolute;
+        width: 87px;
+        top: -52px;
+        left: -38px;
+      }
+    }
+
+    & .stats-item:nth-child(3) {
+      position: absolute;
+      bottom: 160px;
+      right: 64px;
+      width: 305px;
+      padding: 20px 0 40px 30px;
+
+      & img {
+        position: absolute;
+        width: 103px;
+        top: -20px;
+        right: -20px;
+      }
+    }
+
+    & .stats-item:nth-child(4) {
+      position: absolute;
+      top: 20px;
+      right: 0;
+      width: 310px;
+      padding: 20px 0 40px 30px;
+      & img {
+        position: absolute;
+        width: 107px;
+        top: -20px;
+        right: -28px;
+      }
+    }
+
+    & .stats-item :nth-child(1) {
+      margin-bottom: 4px;
+      font-weight: 600;
+      font-size: 72px;
+      line-height: 84px;
+    }
+
+    & .stats-item :nth-child(2) {
+      margin-left: 16px;
+      padding-left: 12px;
+      border-left: 7px solid $secondary-color;
+      color: $secondary-text-color;
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  & .experience-wrapper {
+    margin-left: 142px;
+
+    & .experience-title {
+      margin-bottom: 34px;
+      color: $primary-color;
+      font-weight: 600;
+      font-size: 72px;
+      line-height: 84px;
+    }
+
+    & .experience-content {
+      margin-bottom: 34px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    & a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 178px;
+      height: 53px;
+      border-radius: 4px;
+      background-color: $primary-color;
+      color: $main-white-color;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 21px;
+    }
+  }
+}
